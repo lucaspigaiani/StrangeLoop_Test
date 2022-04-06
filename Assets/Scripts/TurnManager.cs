@@ -12,7 +12,6 @@ public class TurnManager : MonoBehaviour
 
     public void ChangePlayTime(PlayTime nextPlayTime)
     {
-        gameController.ComparePosition();
         currentPlayTime = nextPlayTime;
         StartTurn();
     }

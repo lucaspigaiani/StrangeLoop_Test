@@ -17,6 +17,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private Text currentTurnHeader;
     [SerializeField] private GameObject[] endGameTurnOff;
 
+    private void Update()
+    {
+        ComparePosition();
+    }
+
     public void ReloadLevel() 
     {
         Scene scene = SceneManager.GetActiveScene();
